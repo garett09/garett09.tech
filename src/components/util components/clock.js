@@ -35,7 +35,7 @@ export default class Clock extends Component {
   }
 
   render() {
-    const { currentTime } = this.state;
+    const currentTime = this.state;
 
     let day = this.dayList[currentTime.getDay()];
     let hour = currentTime.getHours();
