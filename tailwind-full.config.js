@@ -188,7 +188,7 @@ module.exports = {
         "ui-serif",
         "Georgia",
         "Cambria",
-        '"Times New Roman"',
+        "Times New Roman",
         "Times",
         "serif",
       ],
