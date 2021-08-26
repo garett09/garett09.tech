@@ -16,6 +16,23 @@
       "message": "nice cock ",
       "revId": "a48367773ac16c1742941d392842a860c27d2c30",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5944ead5_088bb455",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1019419
+      },
+      "writtenOn": "2021-08-26T15:27:17Z",
+      "side": 1,
+      "message": "LGTM!",
+      "revId": "a48367773ac16c1742941d392842a860c27d2c30",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
