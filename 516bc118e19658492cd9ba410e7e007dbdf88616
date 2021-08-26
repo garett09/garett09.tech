@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "39ac32e3_4453e183",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1019419
+      },
+      "writtenOn": "2021-08-26T15:38:19Z",
+      "side": 1,
+      "message": "si sir ay hindi gwapo, paki palitan",
+      "revId": "516bc118e19658492cd9ba410e7e007dbdf88616",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
