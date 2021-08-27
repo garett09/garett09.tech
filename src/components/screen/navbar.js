@@ -24,7 +24,7 @@ export default class Navbar extends Component {
 
   display_btm_bar = (e) => {
     let curr_component = e.target;
-    if ($(curr_component).parent().parent().parent().hasClass("navbar-box")) curr_component = $(e.target).parent().parent().parent().get();
+    if ($(curr_component).parent().parent().parent().hasClass("navbar-box") && $(curr_component).hasClass("status-symbol")) curr_component = $(e.target).parent().parent().parent().get();
     if (!$(curr_component).hasClass("navbar-box")) return;
     if (this.state.prev_component !== null) {
       if (curr_component === this.state.prev_component || curr_component[0] === this.state.prev_component[0] || curr_component === this.state.prev_component[0] || curr_component[0] === this.state.prev_component) {
