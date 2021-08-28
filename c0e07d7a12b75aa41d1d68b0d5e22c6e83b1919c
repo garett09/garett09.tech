@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a85cbc50_d4c75fe4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1019419
+      },
+      "writtenOn": "2021-08-28T15:21:01Z",
+      "side": 1,
+      "message": "testing will be deleted in future commits",
+      "revId": "c0e07d7a12b75aa41d1d68b0d5e22c6e83b1919c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
