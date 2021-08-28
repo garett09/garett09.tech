@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import RegisterApp from '../base/register_app';
 import BackgroundImage from '../util components/background-image'
+import SideBar from './side_bar';
 
 export class Desktop extends Component {
     constructor() {
@@ -55,6 +56,7 @@ export class Desktop extends Component {
     render() {
         return (
             <div className="h-full w-full pt-6 bg-transparent relative overflow-hidden overscroll-none window-parent">
+                <SideBar icons={this.icons} openAppByAppId={this.openApp} />
                 <BackgroundImage img={this.props.bg_img_path} />
 
 
