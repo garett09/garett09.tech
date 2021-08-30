@@ -10,6 +10,7 @@ export class Desktop extends Component {
     constructor() {
         super();
         this.app_stack = [];
+        this.initFavourite = {};
         this.state = {
             cursorWait: false,
             focused_windows: {},
@@ -43,6 +44,7 @@ export class Desktop extends Component {
                 [app.id]: true,
             };
         });
+        this.initFavourite = { ...favourite_apps };
         this.setState({
             focused_windows: focused_windows,
             closed_windows: closed_windows,
@@ -79,12 +81,16 @@ export class Desktop extends Component {
     openApp = (objId) => {
         // removes focus from all window and 
         // gives focus to window with 'id = objId'
+        // if the app is disabled
         if (this.state.disabled_apps[objId]) return;
         let closed_windows = this.state.closed_windows;
+        let favourite_apps = this.state.favourite_apps;
+        // set cursor to wait until window opens
         this.setState({ cursorWait: true });
         setTimeout(() => {
-            closed_windows[objId] = false;
-            this.setState({ closed_windows, cursorWait: false }, this.focus(objId));
+            favourite_apps[objId] = true; // adds opened app to sideBar
+            closed_windows[objId] = false; // openes app's window
+            this.setState({ closed_windows, favourite_apps, cursorWait: false }, this.focus(objId));
             this.app_stack.push(objId);
         }, Math.random() * 1000);
     }
@@ -97,8 +103,10 @@ export class Desktop extends Component {
          }
          // close window
         let closed_windows = this.state.closed_windows;
-        closed_windows[objId] = true;
-        this.setState({ closed_windows });
+        let favourite_apps = this.state.favourite_apps;
+        if (this.initFavourite[objId] === false) favourite_apps[objId] = false; // if user default app is not favourite, remove from sidebar
+        closed_windows[objId] = true; // closes the app's window
+        this.setState({ closed_windows, favourite_apps });
     }
 
 
