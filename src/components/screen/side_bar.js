@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import SideBarApp from '../base/side_bar_app';
+import AllApps from '../util components/sidebar_all_apps';
 
 export class SideBar extends Component {
     renderApps = () => {
@@ -23,6 +24,7 @@ export class SideBar extends Component {
                             : null
                     )
                 }
+                <AllApps />
             </div>
         )
     }
